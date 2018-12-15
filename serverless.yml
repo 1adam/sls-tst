@@ -3,7 +3,7 @@ service: sls-test-svc
 
 provider:
   name: aws
-  runtime: nodejs10.14.1
+  runtime: nodejs8.10
 
 functions:
   currentTime:
