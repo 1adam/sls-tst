@@ -10,5 +10,5 @@ functions:
     handler: handler.HTTPendpoint
     events:
       - http:
-        path: ping
-        method: get
+          path: ping
+          method: get
