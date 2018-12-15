@@ -1,0 +1,19 @@
+{
+  "name": "sls-tst",
+  "version": "0.1.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1adam/sls-tst.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1adam/sls-tst/issues"
+  },
+  "homepage": "https://github.com/1adam/sls-tst#readme"
+}

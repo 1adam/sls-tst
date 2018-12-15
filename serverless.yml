@@ -1,0 +1,14 @@
+---
+service: sls-test-svc
+
+provider:
+  name: aws
+  runtime: nodejs10.14.1
+
+functions:
+  currentTime:
+    handler: handler.HTTPendpoint
+    events:
+      - http:
+        path: ping
+        method: get
