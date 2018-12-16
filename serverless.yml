@@ -23,5 +23,5 @@ package:
     - sls-test-svc-_star_-_star_-policy.json
     - README.md
     - serverless.yml
-    - .git/**
+    - .git*
     - .serverless/**
