@@ -4,6 +4,10 @@ service: sls-test-svc
 provider:
   name: aws
   runtime: nodejs8.10
+  stage: ${opt:stage, self:custom.defaultStage}
+
+custom:
+  defaultStage: dev
 
 functions:
   currentTime:
@@ -12,3 +16,12 @@ functions:
       - http:
           path: ping
           method: get
+
+package:
+  individually: true
+  exclude:
+    - sls-test-svc-_star_-_star_-policy.json
+    - README.md
+    - serverless.yml
+    - .git/**
+    - .serverless/**
